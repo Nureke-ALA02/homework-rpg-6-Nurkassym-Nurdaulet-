@@ -6,9 +6,6 @@ public abstract class DefenseHandler {
     private DefenseHandler next;
 
     public DefenseHandler setNext(DefenseHandler next) {
-        // Provided: fluent setter so chains can be built like:
-        //   dodge.setNext(block).setNext(armor).setNext(hp)
-        // setNext returns the argument so the chain reads left-to-right.
         this.next = next;
         return next;
     }
