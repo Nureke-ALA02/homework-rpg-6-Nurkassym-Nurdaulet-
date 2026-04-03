@@ -50,4 +50,7 @@ public class ArenaFighter {
         if (dodgeChance < 0) dodgeChance = 0;
         if (dodgeChance > 1) dodgeChance = 1;
     }
+    public boolean isAlive() {
+        return health > 0;
+    }
 }
